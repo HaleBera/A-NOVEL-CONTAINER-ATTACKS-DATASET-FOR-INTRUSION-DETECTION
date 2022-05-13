@@ -1,0 +1,10 @@
+CWE-89 
+
+1. CVE-2020-9483
+
+https://hub.docker.com/r/apache/skywalking-oap-server
+$ docker run -p 12800:12800 --name oap --restart always -d apache/skywalking-oap-server:6.0.0-alpha
+
+
+$ docker ps
+$ sudo docker exec -it CONTAINER_ID bash
