@@ -1,3 +1,8 @@
+NOT READY YET ....
+
+
+
+
 CWE-89 
 
 1. CVE-2020-9483
@@ -8,3 +13,16 @@ $ docker run -p 12800:12800 --name oap --restart always -d apache/skywalking-oap
 
 $ docker ps
 $ sudo docker exec -it CONTAINER_ID bash
+
+
+
+
+------
+
+sudo docker exec -it b61648098a79 /bin/bash
+
+
+sudo docker run -it -p 8080:8080 -d  vulhub/webmin:1.910
+
+
+sudo docker inspect 2a87d9d86499
