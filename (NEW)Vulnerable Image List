@@ -1,57 +1,30 @@
-For this turorial, we have "10" vulnerable images for "10" CVEs.
+For this dataset, we have "10" vulnerable images for "10" CVEs.
 
 NOTE !!! Some CVE'S HAVE OCCURRED ON A DIFFERENT IMAGE RELATED TO ANOTHER CVE, WE ARE RESPECTING TO THEM :D
 
 ----------------------------------------------------------------------------------------------------------------------------
         CWE-79
-                CVE_ID: CVE-2020-9496   DEPLOYMENT: k3d-big-agent-1
+             - CVE_ID: CVE-2020-9496   DEPLOYMENT: k3d-big-agent-1
                 IMAGE_NAME: 'vulfocus/tomcat-cve_2020_9484:latest'
                 IMAGE_URL: 'https://hub.docker.com/r/vulfocus/tomcat-cve_2020_9484/tags'
                 PULL_COMMAND: 'docker pull vulfocus/tomcat-cve_2020_9484:latest' 
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 8080:8080 -d vulfocus/tomcat-cve_2020_9484'
-                NUCLEI_COMMAND: ''
-
+          
 
             - CVE-2019-7543     k3d-big-agent-2
                 IMAGE_NAME: 'vulfocus/kindeditor-cve_2018_18950:latest'
                 IMAGE_URL: 'https://hub.docker.com/r/vulfocus/kindeditor-cve_2018_18950/tags' 
                 PULL_COMMAND: 'docker pull vulfocus/kindeditor-cve_2018_18950'
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 80:80 -d vulfocus/kindeditor-cve_2018_18950:latest'
-                NUCLEI_COMMAND: ''
+          
 
-----------------------------------------------------------------------------------------------------------------------------        CWE-78
+----------------------------------------------------------------------------------------------------------------------------        
+        CWE-78
             - CVE-2019-15107     DEPLOYMENT: k3d-big-agent-4
                 IMAGE_NAME: 'vulhub/webmin:1.910'
                 IMAGE_URL: 'https://github.com/vulhub/vulhub/tree/master/webmin/CVE-2019-15107'
                 RUN_COMMANDS: 'sudo docker-compose up (from the directory where the docker-compose.yaml exists)'
                               'sudo docker run -it -p 10000:10000 -d  vulhub/webmin:1.910'
-                NUCLEI_COMMAND: 'sudo nuclei -u https://IP_ADDR:10000 -t ~/nuclei-templates/cves/2019/CVE-2019-15107.yaml'
-
-CVE-2019-15107-deployment.yaml
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: CVE-2019-15107-deployment
-  labels:
-    app: webmin
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: webmin
-  template:
-    metadata:
-      labels:
-        app: webmin
-    spec:
-      containers:
-      - name: CVE-2019-15107
-        image: vulhub/webmin:1.910
-        ports:
-        - containerPort: 10000
-
-
 
 
             - CVE-2019-16662      DEPLOYMENT: k3d-big-agent-5
@@ -70,7 +43,6 @@ spec:
                 NUCLEI_COMMAND: ''
 
 
-
             - CVE-2020-12720     DEPLOYMENT: k3d-big-agent-8
                 IMAGE_NAME: 'vulfocus/vbulletin-cve_2019_16759:latest'
                 IMAGE_URL: 'https://hub.docker.com/r/vulfocus/vbulletin-cve_2019_16759/tags' 
@@ -85,29 +57,27 @@ spec:
                 IMAGE_NAME: 'flink-cve-2020-17518'
                 IMAGE_URL: 'https://github.com/vulhub/vulhub/tree/master/flink/CVE-2020-17518' 
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 8081:8081 -d flink-cve-2020-17518'
-                NUCLEI_COMMAND: ''
-
+              
             - CVE-2021-26086       DEPLOYMENT: k3d-big-agent-11
                 IMAGE_NAME: 'vulfocus/jira-cve_2019_8451:latest'
                 IMAGE_URL: 'https://hub.docker.com/r/vulfocus/jira-cve_2019_8451/tags' 
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 8080:8080 -d vulfocus/jira-cve_2019_8451:latest'
-                NUCLEI_COMMAND: ''
+             
 
-            - CVE-2021-43495 (May replaced by another ...)
-
+        
 ----------------------------------------------------------------------------------------------------------------------------
         CWE-434
             - CVE-2020-25213   DEPLOYMENT: k3d-big-agent-13
                 IMAGE_NAME: 'ridgesecuritydocker/cve-2020-25213:mywordpress1'
                 IMAGE_URL: 'https://hub.docker.com/r/ridgesecuritydocker/cve-2020-25213/tags' 
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 80:80 -d ridgesecuritydocker/cve-2020-25213:mywordpress1'
-                NUCLEI_COMMAND: ''
+       
 
             - CVE-2021-25281 (May replaced by another ...)    DEPLOYMENT: k3d-big-agent-14
                 IMAGE_NAME: 'vulfocus/salt-cve_2021_25281:latest'
                 IMAGE_URL: 'https://hub.docker.com/r/vulfocus/salt-cve_2021_25281/tags' 
                 RUN_COMMANDS: '(possibly)sudo docker run -it -p 8000:8000 -d vulfocus/salt-cve_2021_25281:latest'
-                NUCLEI_COMMAND: ''
+         
 
 ----------------------------------------------------------------------------------------------------------------------------
            
