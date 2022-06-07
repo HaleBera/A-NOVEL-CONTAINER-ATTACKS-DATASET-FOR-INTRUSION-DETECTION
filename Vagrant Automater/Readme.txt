@@ -20,23 +20,28 @@ Vagrant Installation
 
 
 
-
-VM Configuraiton
-
-  # Create a vagrant VM.
-  $ python3 vagrant_automate.sh
+Construct the Environment
 
 
-  # Enter the name of the VM, which will be an attacker.
-  $ CVE-2019-15107_Attacker1
-
-
-  # Go to the path of the directory created by "vagrant_automate.sh".
-  $ cd vagrant_CVE-2019-15107_Attacker1
-
-
-  # UP the new VM and establish an ssh connection with it.
-  $ vagrant up & vagrant ssh  # Select eno1 (the first option)
+  1. VM Configuraiton
   
+      # Create a vagrant VM.
+      $ python3 vagrant_automate.sh
 
+
+      # Enter the name of the VM, which will be an attacker.
+      $ CVE-2019-15107_Attacker1
+
+
+      # Go to the path of the directory created by "vagrant_automate.sh".
+      $ cd vagrant_CVE-2019-15107_Attacker1
+
+
+      # UP the new VM and establish an ssh connection with it.
+      $ vagrant up && vagrant ssh  # Select eno1 (the first option)
+  
+  
+  2. Send attacker scripts to the VM (OPTION 2 is followed)
+      
+      
 
