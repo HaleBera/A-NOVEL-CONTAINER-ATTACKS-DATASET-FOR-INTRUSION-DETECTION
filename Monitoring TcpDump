@@ -2,3 +2,8 @@
 
 
 sudo tcpdump -i eno1 src 144.122.71.200 and dst 144.122.71.18 -vv -w CVE-2019-15107_Attacker123.pcap
+
+
+sudo tcpdump -i eno1 (host 144.122.71.200 or host 144.122.71.203 or host 144.122.71.208) and host 144.122.71.18 -vv -w CVE-2019-15107_Attacker123.pcap
+
+sudo tcpdump -i eno1 src 144.122.71.200 or src 144.122.71.203 or src 144.122.71.208) and dst 144.122.71.18 -vv -w CVE
