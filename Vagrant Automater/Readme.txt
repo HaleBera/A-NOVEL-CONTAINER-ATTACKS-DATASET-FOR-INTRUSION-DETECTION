@@ -17,6 +17,12 @@ Vagrant Installation
           
           - Install  "vagrant-scp plugin" the following command:     
             $ vagrant plugin install vagrant-scp 
+           
+           
+     OPTION 3: You can use scp directly. (Permission Denied alınıyor)
+     
+              - Follow the URL1
+
 
 
 
@@ -41,7 +47,15 @@ Construct the Environment
       $ vagrant up && vagrant ssh  # Select eno1 (the first option)
   
   
-  2. Send attacker scripts to the VM (OPTION 2 is followed)
+  2. Send attacker scripts to the VM (OPTION 2 is followed) (Yiğit)
       
-      
+      $ vagrant scp /home/hale/Desktop/CVE-2020-9483.pcap ubuntu-focal@127.0.0.1:/home/vagrant (Yiğit)
+
+      Gives the error:
+        hale@k8s-leader:~/vagrant_contset2$ vagrant scp vagrant scp /home/hale/Desktop/CVE-2020-9483.pcap ubuntu-               focal@127.0.0.1:/home/vagrant
+        The machine with the name 'ubuntu-focal@127.0.0.1' was not found configured for this Vagrant environment.
+        
+
+       !!!! For OPTION 3, Permission Denied alınıyor (Yiğit)        
+
 
