@@ -5,10 +5,18 @@ Vagrant Installation
   1. ((!!!)Vagrant installation commands will be added soon ... )
   
   
-  2. Install  "vagrant-scp plugin" to copy files between the host and the vagrant VMs.
-     (https://howtoprogram.xyz/2017/08/13/copy-files-folders-host-guest-vagrant/)
+  2. OPTION 1: You can use a shared folder to access attacker scripts.
+          URL1: https://howtoprogram.xyz/2017/08/13/copy-files-folders-host-guest-vagrant/)
+  
+          - To use shared folders, overwrite "Vagrantfile" context in the vagrant_automate.sh, according to URL1
+
+
+     OPTION 2: You can use vagrant-scp plugin to copy the access attacker scripts to the VM.
      
-     $ vagrant plugin install vagrant-scp 
+          - Clone the repo to yur host, and send the related attacker folder by using vagrant-scp plugin.
+          
+          - Install  "vagrant-scp plugin" the following command:     
+            $ vagrant plugin install vagrant-scp 
 
 
 
@@ -31,6 +39,4 @@ VM Configuraiton
   $ vagrant up & vagrant ssh  # Select eno1 (the first option)
   
 
-OPTION 1: To use shared folders, overwrite "Vagrantfile" context in the vagrant_automate.sh, according to https://howtoprogram.xyz/2017/08/13/copy-files-folders-host-guest-vagrant/
 
-OPTION 2: Clone the repo to yur host, and send the related attacker folder by using vagrant-scp plugin
