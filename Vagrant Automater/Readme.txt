@@ -56,6 +56,12 @@ Construct the Environment
         The machine with the name 'ubuntu-focal@127.0.0.1' was not found configured for this Vagrant environment.
         
 
-       !!!! For OPTION 3, Permission Denied alınıyor (Yiğit)        
+       !!!! For OPTION 3, Permission Denied alınıyor (Yiğit)   
+       
+       ***Thus, for now, we simply clone the repo in each VM (https://www.toolsqa.com/git/clone-repository-using-ssh/)
+          $ git clone git@github.com:HaleBera/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION.git
+          or 
+          $ git clone https://github.com/HaleBera/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION.git
+
 
 
