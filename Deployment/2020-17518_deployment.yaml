@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cve-2020-17518
+  labels:
+    app: flink
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flink
+  template:
+    metadata:
+      labels:
+        app: flink
+    spec:
+      containers:
+      - name: flink
+        image: vulfocus/flink-cve_2020_17519:latest
+        ports:
+        - containerPort: 8081
+# https://hub.docker.com/layers/vulfocus/flink-cve_2020_17519/latest/images/sha256-cf9fb61adca3b7e82033fbea0696d7ab1a20750e39c1c049343ed6e281334819?context=explore
+# We might need 6123 as well 
