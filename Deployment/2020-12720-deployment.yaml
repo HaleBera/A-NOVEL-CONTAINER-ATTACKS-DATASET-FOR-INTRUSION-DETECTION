@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cve-2020-12720
+  labels:
+    app: vbulletin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vbulletin
+  template:
+    metadata:
+      labels:
+        app: vbulletin
+    spec:
+      containers:
+      - name: vbulletin
+        image: vulfocus/vbulletin-cve_2019_16759:latest
+        ports:
+        - containerPort: 80
+        
+        
+ # https://hub.docker.com/r/vulfocus/vbulletin-cve_2019_16759/tags
