@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: CVE-2019-16662 
+  name: cve-2019-16662 
   labels:
     app: rconfig
 spec:
