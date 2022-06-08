@@ -1,0 +1,23 @@
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cve-2019-8451 
+  labels:
+    app: jira
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jira
+  template:
+    metadata:
+      labels:
+        app: jira
+    spec:
+      containers:
+      - name: jira
+        image: vulfocus/jira-cve_2019_8451:latest
+        ports:
+        - containerPort: 8080
