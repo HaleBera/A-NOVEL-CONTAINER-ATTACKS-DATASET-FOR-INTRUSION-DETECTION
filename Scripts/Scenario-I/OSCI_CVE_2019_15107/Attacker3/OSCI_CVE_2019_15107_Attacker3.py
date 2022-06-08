@@ -11,8 +11,8 @@ class OSCI_CVE_2019_15107_Attacker3(AttackerBase):
 
 
     def discovery(self) -> None:     
-        self.commandRunner.runCommand("nmap -n -Pn -p 80,443,10000 192.168.137.192")
-        self.commandRunner.runCommand("nmap -A 144.122.71.18")
+        #self.commandRunner.runCommand("nmap -n -Pn -p 80,443,10000 192.168.137.192")
+        #self.commandRunner.runCommand("nmap -A 144.122.71.18")
 
     def main(self):
         print("Main method started")
