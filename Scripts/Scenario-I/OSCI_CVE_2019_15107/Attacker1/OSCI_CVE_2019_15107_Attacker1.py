@@ -10,7 +10,8 @@ class OSCI_CVE_2019_15107_Attacker1(AttackerBase):
 
 
 
-    def discovery(self) -> None:     
+    def discovery(self) -> None: 
+        pass
         #self.commandRunner.runCommand("curl http://144.122.71.18")
         #self.commandRunner.runCommand("nmap --open http://144.122.71.18")
         # self.commandRunner.runCommand("nmap -p 1-65535 -sV -sS -T4 http://144.122.71.18")
@@ -23,7 +24,7 @@ class OSCI_CVE_2019_15107_Attacker1(AttackerBase):
 
     # Reverse shell will be handle later...
     def reverseShell(self):
-
+        pass
         # init newTerminalThread
         # newTerminalThread -> Open terminal and run specific code ( it will wait) 
 
@@ -36,7 +37,7 @@ class OSCI_CVE_2019_15107_Attacker1(AttackerBase):
 
 
 
-        pass
+       
     def reverseShell2(self):
         pass
 
