@@ -49,16 +49,15 @@ echo "end" >> Vagrantfile
 #  Up the vagrant and get an ssh connection (https://phoenixnap.com/kb/vagrant-beginner-tutorial#:~:text=Vagrant%20SSH,-You%20can%20connect&text=Once%20you%20are%20done%20exploring,the%20session%20with%20CTRL%2DD.)
 vagrant up
 # select eno1 for bridge
-# To keep execute bash commmands after getting the ssh add a "EOF" (https://stackoverflow.com/questions/26434604/bash-script-execute-commands-after-ssh
-)
-vagrant ssh << EOF
-echo "The current vagrant box's IP is:"
-ip a
+# To keep execute bash commmands after getting the ssh add a "EOF" (https://stackoverflow.com/questions/26434604/bash-script-execute-commands-after-ssh)
+#vagrant ssh << EOF
+#echo "The current vagrant box's IP is:"
+#ip a
 #vagrant@ubuntu-focal:~$ ip a # learn vagrant box's ip address
-echo "befor EOF"
+3echo "befor EOF"
 # Exit from the vagrant VM
-exit
-EOF
+#exit
+#EOF
 # Properly halt te vagrant
-vagrant halt
-echo "after EOF"
+#vagrant halt
+#echo "after EOF"
