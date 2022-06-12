@@ -3,7 +3,7 @@ sudo apt update
 sudo apt-get install nano
 sudo apt-get install python3
 sudo apt install net-tools     # To learn the VMs IP address, use "ifconfig" 
-
+sudo apt-get install git -y
 
 
 # Nuclei needed to be installed
@@ -36,6 +36,8 @@ go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
 
 
+# clone the repointo each vagrant
+git clone https://github.com/HaleBera/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION.git
 
 
 
