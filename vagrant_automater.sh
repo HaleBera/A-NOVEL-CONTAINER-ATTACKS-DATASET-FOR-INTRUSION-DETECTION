@@ -19,9 +19,10 @@ cd $vagrant_file_name
 touch Vagrantfile
 # Write the following content into the Vagrantfile (https://linuxize.com/post/bash-write-to-file/#:~:text=In%20Linux%2C%20to%20write%20text,operators%20or%20the%20tee%20command.)
 #printf "Vagrant.configure("2") do |config|\n" $USER > Vagrantfile
- 
+
 echo "Vagrant.configure(\"2\") do |config|" >> Vagrantfile
-echo "  config.vm.box = \"ubuntu/focal64\"" >> Vagrantfile
+#echo "  config.vm.box = \"ubuntu/focal64\"" >> Vagrantfile
+echo "  config.vm.box = \"alpine/alpine64\"" >> Vagrantfile
 echo "  config.vm.network \"public_network\"" >> Vagrantfile
 echo "end" >> Vagrantfile
 #  Up the vagrant and get an ssh connection (https://phoenixnap.com/kb/vagrant-beginner-tutorial#:~:text=Vagrant%20SSH,-You%20can%20connect&text=Once%20you%20are%20done%20exploring,the%20session%20with%20CTRL%2DD.)
