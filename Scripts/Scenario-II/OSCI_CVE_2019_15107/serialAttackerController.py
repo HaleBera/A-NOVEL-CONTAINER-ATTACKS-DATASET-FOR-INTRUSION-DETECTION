@@ -22,10 +22,17 @@ if __name__ == '__main__':
     # Call your custom attacks here
 
     tic = time.time()
+    indices = [x for x in range(attacks)]
 
-    for attack in attacks:
-        attackInvoker(attack)
+    while len(indices):
+        i = random.randrange(len(indices))
+        del indices[i]
+        
+        attackInvoker(attacks[i])
         time.sleep(random.randint(5,8))
+        
+        del attacks[i]
+
 
     toc = time.time()
 
