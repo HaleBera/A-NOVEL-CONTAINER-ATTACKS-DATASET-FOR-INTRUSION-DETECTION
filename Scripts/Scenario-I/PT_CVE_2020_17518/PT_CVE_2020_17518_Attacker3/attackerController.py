@@ -2,7 +2,7 @@ from attackerBase import *
 
 # Import your custom attack classes here
 
-from PT_CVE_2021_26086_Attacker3 import PT_CVE_2021_26086_Attacker3
+from PT_CVE_2020_17518_Attacker3 import PT_CVE_2020_17518_Attacker3
 
 
 import time
@@ -14,7 +14,7 @@ def attackInvoker(attackerBase: AttackerBase):
     print("Finished attack "+ attackerBase.__class__.__name__)
 
 if __name__ == '__main__':
-    attacks = [PT_CVE_2021_26086_Attacker3()]
+    attacks = [PT_CVE_2020_17518_Attacker3()]
     # Call your custom attacks here
 
     tic = time.time()
