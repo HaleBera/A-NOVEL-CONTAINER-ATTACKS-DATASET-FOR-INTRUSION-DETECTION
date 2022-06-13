@@ -2,8 +2,7 @@ from attackerBase import *
 
 # Import your custom attack classes here
 
-from 
-OSCI_CVE_2019_16662_Attacker1 import OSCI_CVE_2019_16662_Attacker1
+from OSCI_CVE_2019_16662_Attacker1 import OSCI_CVE_2019_16662_Attacker1
 from OSCI_CVE_2019_16662_Attacker2 import OSCI_CVE_2019_16662_Attacker2
 from OSCI_CVE_2019_16662_Attacker3 import OSCI_CVE_2019_16662_Attacker3
 
