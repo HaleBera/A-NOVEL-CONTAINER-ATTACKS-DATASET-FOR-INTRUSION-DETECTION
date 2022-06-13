@@ -31,7 +31,7 @@ if __name__ == '__main__':
             del indices[i]
 
             attackInvoker(attacks[i])
-            time.sleep(random.randint(5,8))
+            time.sleep(random.randint(1,4))
 
             del attacks[i]
 
