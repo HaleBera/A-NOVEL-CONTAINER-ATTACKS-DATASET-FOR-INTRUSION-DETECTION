@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # Call your custom attacks here
 
     tic = time.time()
-    indices = [x for x in range(attacks)]
+    indices = [x for x in range(len(attacks))]
 
     while len(indices):
         i = random.randrange(len(indices))
