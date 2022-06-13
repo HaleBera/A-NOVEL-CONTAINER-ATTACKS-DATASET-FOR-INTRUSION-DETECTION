@@ -17,8 +17,8 @@ def attackInvoker(attackerBase: AttackerBase):
 
 if __name__ == '__main__':
     attacks = [PT_CVE_2020_17518_Attacker3(),\
-               PT_CVE_2020_17518_Attacker1,\
-               PT_CVE_2020_17518_Attacker2]
+               PT_CVE_2020_17518_Attacker1(),\
+               PT_CVE_2020_17518_Attacker2()]
 
     # Call your custom attacks here
 
