@@ -20,8 +20,12 @@ WEAKNESSES & VULNERABILITIES
 TESTING ENVIRONMENT
 -----------------------------------------------------------------------------------------------------
 
-    On the same host we established a kubernetes cluster with deployments in the https://github.com/HaleBera/A-NOVEL-CONTAINER-ATTACKS-DATASET-FOR-INTRUSION-DETECTION-Deployments
-    For virtualization we used vagrant virtual boxes with a Nuclei Engine inside, as an attacker.
+    The vulnerable cluster and the attackers are on the same host.
+    
+        - A kubernetes cluster is established by using the deployments in https://github.com/yigitsever/deployments.
+        - Vagrant virtual boxes are used for virtualizing the attackers.
+            - A Nuclei Engine is used to implement attacks    
+ 
 
 
 
