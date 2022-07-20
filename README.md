@@ -6,32 +6,13 @@
 
 
 -----------------------------------------------------------------------------------------------------
-WEAKNESSES
+WEAKNESSES & VULNERABILITIES
 -----------------------------------------------------------------------------------------------------
-    CWE-79
-    CWE-78
-    CWE-89
-    CWE-22
-    CWE-434
-
-
-
------------------------------------------------------------------------------------------------------
-VULNERABILITIES
------------------------------------------------------------------------------------------------------
-
-    CWE-79
-        - CVE-2019-7543
-    CWE-78
-        - CVE-2019-15107
-        - CVE-2019-16662
-    CWE-89
-        - CVE-2020-9483
-    CWE-22
-        - CVE-2020-17518
-        - CVE-2021-26086
-    CWE-434
-        - CVE-2020-25213
+    CWE-79:  CVE-2019-7543
+    CWE-78:  CVE-2019-15107,CVE-2019-16662
+    CWE-89:  CVE-2020-9483
+    CWE-22:  CVE-2020-17518,CVE-2021-26086 
+    CWE-434: CVE-2020-25213
 
 
 
@@ -46,10 +27,10 @@ TESTING ENVIRONMENT
 
 
 -----------------------------------------------------------------------------------------------------
-DATASET CREATION SCENARIOS
+DATASET CREATION SCENARIOS 
 -----------------------------------------------------------------------------------------------------
 
-    SCENARIO I: "Define different Attackers for each CVE. Each includes different types of commands and payloads"
+    SCENARIO I: "Define different Attackers for each CVE. by using different types of commands or payloads"
     -----------
         1. For each CVE, we defined at least "3" different attackers, using attackerBase.py
 
@@ -58,7 +39,7 @@ DATASET CREATION SCENARIOS
             - SQL_CVE_2020_9483_Attacker_III.py
 
 
-        2. To make each attacker have a unique IP address, create each childAttacker.py derived from the attackerBase.py, in different vagrants.
+        2. To make each attacker have a unique IP address, in different vagrants.
 
         SUBSCENARIO I.I:
         ----------------
