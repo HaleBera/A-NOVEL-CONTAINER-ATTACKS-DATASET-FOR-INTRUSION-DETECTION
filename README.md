@@ -30,33 +30,4 @@ TESTING ENVIRONMENT
 
 
 
------------------------------------------------------------------------------------------------------
-DATASET CREATION SCENARIOS 
------------------------------------------------------------------------------------------------------
-
-    SCENARIO I: "Define different Attackers for each CVE. by using different types of commands or payloads"
-    -----------
-        1. For each CVE, we defined at least "3" different attackers, using attackerBase.py
-
-            - SQL_CVE_2020_9483_Attacker_I.py
-            - SQL_CVE_2020_9483_Attacker_II.py
-            - SQL_CVE_2020_9483_Attacker_III.py
-
-
-        2. To make each attacker have a unique IP address, in different vagrants.
-
-        SUBSCENARIO I.I:
-        ----------------
-            0. Perform the tests of each CVE at a time
-
-        SUBSCENARIO I.II:
-        ----------------
-            0. Perform the tests of ALL CVEs at the same time
-
-
-
-
-
-
-
 
