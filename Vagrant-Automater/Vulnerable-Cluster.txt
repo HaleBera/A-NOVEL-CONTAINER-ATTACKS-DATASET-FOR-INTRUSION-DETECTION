@@ -1,0 +1,6 @@
+0. Create a vagrant virtual (linux) environment to establish a Vulnerable Kubernetes cluster environment.
+
+
+
+
+1. Install and Set Up kubectl on Linux (URL X: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
