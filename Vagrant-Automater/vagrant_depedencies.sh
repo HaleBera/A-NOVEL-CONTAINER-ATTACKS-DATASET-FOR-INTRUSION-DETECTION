@@ -16,7 +16,6 @@ sudo apt-get install git -y
 #!/bin/bash (http://www.compciv.org/topics/bash/scripting/)
 
 # nuclei kurmak icin;
-#sudo apt update && sudo apt upgrade
 #lsb_release -a
 wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
 #ls /usr/local/go # distro's old go version, if exists; then $ 
@@ -31,7 +30,7 @@ echo "export GOROOT=/usr/local/go" >> .bashrc
 echo "export GOPATH=$HOME/go"   >> .bashrc
 echo "export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH"  >> .bashrc
 
- #https://stackoverflow.com/questions/54415733/getting-gopath-error-go-cannot-use-pathversion-syntax-in-gopath-mode-in-ubun
+# https://stackoverflow.com/questions/54415733/getting-gopath-error-go-cannot-use-pathversion-syntax-in-gopath-mode-in-ubun
 # should be updated according to the above url
 
 # get a new shell/logout + login
