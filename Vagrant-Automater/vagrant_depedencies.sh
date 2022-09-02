@@ -21,7 +21,7 @@ sudo apt-get install git -y
 wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
 #ls /usr/local/go # distro's old go version, if exists; then $ 
 sudo rm -rf /usr/local/go
-sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzvf go1.18.linux-amd64.tar.gz
 
 
 # add the following to `$HOME/.bashrc`
