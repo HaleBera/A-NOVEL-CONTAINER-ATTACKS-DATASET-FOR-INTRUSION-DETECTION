@@ -39,6 +39,9 @@ exit 0
 
 vagrant ssh
 
+# Enable GOPATH (https://stackoverflow.com/questions/54415733/getting-gopath-error-go-cannot-use-pathversion-syntax-in-gopath-mode-in-ubun)
+export GO111MODULE=on
+
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
 
