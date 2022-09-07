@@ -24,9 +24,15 @@ TESTING ENVIRONMENT
     
         - A kubernetes cluster is established by using the deployments in https://github.com/yigitsever/deployments.
         - Vagrant virtual boxes are used for virtualizing the attackers.
-            - A Nuclei Engine is used to implement attacks    
+            - A Nuclei Engine is used to implement attacks   
+            
+------------------------------------------------------------------------------------------------------
  
 
+
+Recording
+
+sudo tcpdump -i eno1 src ip_addres_of atacker  -vv -w .pcap_file_location
 
 
 
