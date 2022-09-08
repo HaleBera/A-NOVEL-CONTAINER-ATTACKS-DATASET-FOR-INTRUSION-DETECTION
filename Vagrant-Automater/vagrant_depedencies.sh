@@ -39,6 +39,8 @@ exit 0
 
 vagrant ssh
 
+sudo apt install golang-go
+
 # Enable GOPATH (https://stackoverflow.com/questions/54415733/getting-gopath-error-go-cannot-use-pathversion-syntax-in-gopath-mode-in-ubun)
 export GO111MODULE=on
 
