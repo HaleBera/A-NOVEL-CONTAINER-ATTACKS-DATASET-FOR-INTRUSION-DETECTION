@@ -3,7 +3,6 @@
 # A tutorial for Vagrant (URL1)
 
 # Create a directory that your Vagrantfile will be standing on.
-
 echo " *** Please enter the vagrant file name:"
 read filename
 vagrant_file_name="vagrant_$filename"
@@ -21,7 +20,6 @@ touch Vagrantfile
 
 echo "Vagrant.configure(\"2\") do |config|" >> Vagrantfile
 echo "  config.vm.box = \"ubuntu/focal64\"" >> Vagrantfile
-#echo "  config.vm.box = \"alpine/alpine64\"" >> Vagrantfile
 echo "  config.vm.network \"public_network\"" >> Vagrantfile
 
 echo "  config.vm.provider :virtualbox do |v|" >> Vagrantfile
@@ -36,12 +34,8 @@ echo "end" >> Vagrantfile
 # Reference URL2: Creating a Vagrantfile https://mariadb.com/kb/en/creating-a-vagrantfile/
 # Reference URL3: Bash Write-to-File https://linuxize.com/post/bash-write-to-file/#:~:text=In%20Linux%2C%20to%20write%20text,operators%20or%20the%20tee%20command.
 # Reference URL4: Vagrant Freezes on 'SSH auth method: private key' https://github.com/hashicorp/vagrant/issues/11777
-
-
 # Reference URL5: How to exit SSH of Vagrant in terminal https://superuser.com/questions/704032/how-to-exit-ssh-of-vagrant-in-terminal 
 
 
 #vagrant up
 #vagrant ssh
-
-#sudo apt update && sudo apt upgrade -y
