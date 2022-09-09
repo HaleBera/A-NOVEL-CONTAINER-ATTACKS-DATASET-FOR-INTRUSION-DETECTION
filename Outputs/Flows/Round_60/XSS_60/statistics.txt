@@ -1,9 +1,0 @@
-XSS:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w XSS_60 
-	- Round number: 60
-	- Total elapsed time:  1702.473827123642
-	- Total Minutes= 28.374563785394034
-	- 4223 packets captured
-	- 4223 packets received by filter
-	- 0 packets dropped by kernel
-
