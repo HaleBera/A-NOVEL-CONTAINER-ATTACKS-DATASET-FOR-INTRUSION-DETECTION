@@ -1,1 +1,41 @@
+XSS:
+	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w XSS_60 
+	- Round number: 60
+	- Total elapsed time:  1702.473827123642
+	- Total Minutes= 28.374563785394034
+	- 4223 packets captured
+	- 4223 packets received by filter
+	- 0 packets dropped by kernel
+UUF:
+	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w UUF_60
+	- Round number: 60
+	- Total elapsed time:  1683.0805327892303
+	- Total Minutes= 28.051342213153838
+	- 2207 packets captured
+	- 2207 packets received by filter
+	- 0 packets dropped by kernel
+SQLI:
+	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w SQLI_60
+	- Round number: 60
+	- Total elapsed time:  1702.8550944328308
+	- Total Minutes= 28.38091824054718
+	- 2431 packets captured
+	- 2431 packets received by filter
+	- 0 packets dropped by kernel
+PT:
+	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w PT_60
+	- Round number: 60
+	- Total elapsed time:  1785.1920518875122
+	- Total Minutes= 29.75320086479187
+	- 8886 packets captured
+	- 8886 packets received by filter
+	- 0 packets dropped by kernel
+OSCI:
+	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w OSCI_60
+	- Round number: 60
+	- Total elapsed time:  1982.9936065673828
+	- Total Minutes= 33.04989344278972
+	- 10760 packets captured
+	- 10760 packets received by filter
+	- 0 packets dropped by kernel
 
