@@ -14,6 +14,14 @@ UUF:
 	- 2207 packets captured
 	- 2207 packets received by filter
 	- 0 packets dropped by kernel
+	
+	
+	Total elapsed time:  3275.0285646915436
+	Total Minutes= 54.58380941152573
+	5159 packets captured
+	5159 packets received by filter
+	0 packets dropped by kernel
+	
 SQLI:
 	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w SQLI_60
 	- Round number: 60
@@ -22,6 +30,17 @@ SQLI:
 	- 2431 packets captured
 	- 2431 packets received by filter
 	- 0 packets dropped by kernel
+	
+	
+	5457 packets captured
+	5457 packets received by filter
+	Total elapsed time:  3178.4436407089233
+	Total Minutes= 52.974060678482054
+
+
+	
+	
+
 PT:
 	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w PT_60
 	- Round number: 60
