@@ -1,5 +1,4 @@
 XSS:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w XSS_60 
 	- Round number: 60
 	- Total elapsed time:  1702.473827123642
 	- Total Minutes= 28.374563785394034
@@ -7,54 +6,33 @@ XSS:
 	- 4223 packets received by filter
 	- 0 packets dropped by kernel
 UUF:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w UUF_60
-	- Round number: 60
-	- Total elapsed time:  1683.0805327892303
-	- Total Minutes= 28.051342213153838
-	- 2207 packets captured
-	- 2207 packets received by filter
-	- 0 packets dropped by kernel
-	
-	
-	Total elapsed time:  3275.0285646915436
-	Total Minutes= 54.58380941152573
-	5159 packets captured
-	5159 packets received by filter
-	0 packets dropped by kernel
-	
+	- Round number: 120
+	- Total elapsed time:  3275.0285646915436
+	- Total Minutes= 54.58380941152573
+	- 5159 packets captured
+	- 5159 packets received by filter
+	- 0 packets dropped by kernel	
 SQLI:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w SQLI_60
-	- Round number: 60
-	- Total elapsed time:  1702.8550944328308
-	- Total Minutes= 28.38091824054718
-	- 2431 packets captured
-	- 2431 packets received by filter
-	- 0 packets dropped by kernel
-	
-	
-	5457 packets captured
-	5457 packets received by filter
-	Total elapsed time:  3178.4436407089233
-	Total Minutes= 52.974060678482054
-
-
-	
-	
-
+	- Round number: 120
+	- 5457 packets captured
+	- 5457 packets received by filter
+	- Total elapsed time:  3178.4436407089233
+	- Total Minutes= 52.974060678482054
 PT:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w PT_60
 	- Round number: 60
 	- Total elapsed time:  1785.1920518875122
 	- Total Minutes= 29.75320086479187
 	- 8886 packets captured
 	- 8886 packets received by filter
-	- 0 packets dropped by kernel
+	- 0 packets dropped by kernel	
 OSCI:
-	- sudo tcpdump -i wlp4s0  src 172.16.16.96 -vv -w OSCI_60
 	- Round number: 60
 	- Total elapsed time:  1982.9936065673828
 	- Total Minutes= 33.04989344278972
 	- 10760 packets captured
 	- 10760 packets received by filter
 	- 0 packets dropped by kernel
+	
+	
+Note: The round number of UUF and SQLI are selected bigger then the others to make the resulted flow datasets are in same size.
 
