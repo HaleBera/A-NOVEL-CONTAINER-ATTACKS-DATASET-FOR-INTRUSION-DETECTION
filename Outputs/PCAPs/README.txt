@@ -34,5 +34,5 @@ OSCI:
 	- 0 packets dropped by kernel
 	
 	
-Note: The round numbers are selected bigger then the others to make the resulted flow datasets are nearly in same size.
+Note: The round numbers are selected according to make the resulted flow datasets are nearly in same size.
 
